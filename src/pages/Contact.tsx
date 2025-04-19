@@ -235,7 +235,7 @@ const Contact = () => {
                     </a>
                     <a href="https://www.tiktok.com/@infinityfencingnw" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-100 rounded-full hover:bg-gray-200 transition">
                       <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19.321 5.562a5.122 5.122 0 0 1 .244 5.085A5.269 5.269 0 0 1 17 13.164V6.562h2.321zM17 5.562V2h-2v11.164a3.002 3.002 0 0 1-4.583 2.532 3.002 3.002 0 0 1-1.417-4l-1.732-1a5.002 5.002 0 0 0 9.732.968V5.562z"/>
+                        <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 015.4 5.82C4.1 4.5 3.5 2.8 3.5 1h3.4c-.2 2.2.4 3.4 2 4.8-4.7 0-8 2.7-8 8.8 0 3.2 1.2 5.5 3.3 6.8 2.1 1.3 4.6 1.3 6.7 0 2.1-1.3 3.3-3.6 3.3-6.8v-6c1.4 1 3 1.7 4.8 1.7v-3.4c-1.4 0-2.6-.3-3.7-.9z"/>
                       </svg>
                     </a>
                   </div>
