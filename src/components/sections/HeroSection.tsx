@@ -56,19 +56,19 @@ export const HeroSection = () => {
     fontSize: '1.125rem',
     lineHeight: '1.75rem',
     border: '1px solid #ffffff',
-    background: 'white',
-    color: 'blue', // Blue text as requested
+    background: '#ffffff', // White background
+    color: 'blue', // Blue text
     textDecoration: 'none',
-    borderRadius: '0.375rem', // Approximate Tailwind's default button border-radius
+    borderRadius: '0.375rem',
     cursor: 'pointer',
-    transition: 'background-color 0.2s, color 0.2s', // Smooth hover transition
+    transition: 'background-color 0.2s, color 0.2s',
   }}
   onMouseOver={(e) => {
-    e.target.style.background = '#ffffff';
+    e.target.style.background = '#ffffff'; // White background on hover (unchanged)
     e.target.style.color = '#2563eb'; // blue-600 on hover
   }}
   onMouseOut={(e) => {
-    e.target.style.background = 'transparent';
+    e.target.style.background = '#ffffff'; // Restore white background
     e.target.style.color = 'blue'; // Restore blue text
   }}
 >
