@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
@@ -48,32 +49,9 @@ export const HeroSection = () => {
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
               <a href="/contact">Get a Free Quote</a>
             </Button>
-          <a
-  href="/portfolio"
-  style={{
-    display: 'inline-block',
-    padding: '0.5rem 1rem',
-    fontSize: '1.125rem',
-    lineHeight: '1.75rem',
-    border: '1px solid #ffffff',
-    background: '#ffffff', // White background
-    color: 'blue', // Blue text
-    textDecoration: 'none',
-    borderRadius: '0.375rem',
-    cursor: 'pointer',
-    transition: 'background-color 0.2s, color 0.2s',
-  }}
-  onMouseOver={(e) => {
-    e.target.style.background = '#ffffff'; // White background on hover (unchanged)
-    e.target.style.color = '#2563eb'; // blue-600 on hover
-  }}
-  onMouseOut={(e) => {
-    e.target.style.background = '#ffffff'; // Restore white background
-    e.target.style.color = 'blue'; // Restore blue text
-  }}
->
-  View Our Work
-</a>
+            <Button asChild size="lg" variant="outline" className="bg-white text-blue-600 hover:bg-gray-100">
+              <a href="/portfolio">View Our Work</a>
+            </Button>
           </motion.div>
         </div>
       </div>
