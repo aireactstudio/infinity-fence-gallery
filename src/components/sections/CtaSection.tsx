@@ -26,12 +26,43 @@ export const CtaSection = () => {
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
               <a href="/contact">Get a Free Quote</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-              <a href="tel:3602001005" className="flex items-center gap-2">
-                <Phone className="h-5 w-5" />
-                <span>360.200.1005</span>
-              </a>
-            </Button>
+<a
+  href="tel:3602001005"
+  style={{
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    padding: '0.5rem 1rem',
+    fontSize: '1.125rem',
+    lineHeight: '1.75rem',
+    border: '1px solid #ffffff',
+    background: '#ffffff',
+    color: '#ffffff',
+    textDecoration: 'none',
+    borderRadius: '0.375rem',
+    cursor: 'pointer',
+    transition: 'background-color 0.2s, color 0.2s'
+  }}
+  onMouseOver={(e) => {
+    e.target.style.background = '#ffffff';
+    e.target.style.color = '#2563eb';
+    e.target.querySelector('svg').style.fill = '#2563eb';
+  }}
+  onMouseOut={(e) => {
+    e.target.style.background = '#ffffff';
+    e.target.style.color = '#ffffff';
+    e.target.querySelector('svg').style.fill = '#ffffff';
+  }}
+>
+  <Phone
+    style={{
+      height: '1.25rem',
+      width: '1.25rem',
+      fill: '#ffffff'
+    }}
+  />
+  <span>360.200.1005</span>
+</a>
           </motion.div>
         </div>
       </div>
