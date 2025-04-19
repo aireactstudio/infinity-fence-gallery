@@ -1,4 +1,3 @@
-
 import { Instagram, Youtube } from "lucide-react";
 
 export const Footer = () => {
@@ -36,27 +35,30 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-medium mb-4">Follow Us</h4>
             <div className="flex space-x-4">
-              <a href="https://www.instagram.com/infinityfencingnw/" 
+              <a 
+                href="https://www.instagram.com/infinityfencingnw/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition"
               >
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="https://www.youtube.com/@InfinityFencingNW" 
+              <a 
+                href="https://www.youtube.com/@InfinityFencingNW" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition"
               >
                 <Youtube className="w-6 h-6" />
               </a>
-              <a href="https://www.tiktok.com/@infinityfencingnw" 
+              <a 
+                href="https://www.tiktok.com/@infinityfencingnw" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition"
               >
-                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 015.4 5.82C4.1 4.5 3.5 2.8 3.5 1h3.4c-.2 2.2.4 3.4 2 4.8-4.7 0-8 2.7-8 8.8 0 3.2 1.2 5.5 3.3 6.8 2.1 1.3 4.6 1.3 6.7 0 2.1-1.3 3.3-3.6 3.3-6.8v-6c1.4 1 3 1.7 4.8 1.7v-3.4c-1.4 0-2.6-.3-3.7-.9z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                  <path d="M12 2v14m0 0a5 5 0 1 0 5 5m-5-5a5 5 0 1 1-5-5m5 5V2m0 0a8 8 0 0 0 8-8H6a8 8 0 0 0 8 8" />
                 </svg>
               </a>
             </div>

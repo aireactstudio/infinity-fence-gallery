@@ -47,22 +47,8 @@ export const NavMenu = () => {
               <Youtube className="w-5 h-5 text-gray-600 hover:text-blue-600 transition" />
             </a>
             <a href="https://www.tiktok.com/@infinityfencingnw" target="_blank" rel="noopener noreferrer">
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="24" 
-                height="24" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                className="w-5 h-5 text-gray-600 hover:text-blue-600 transition"
-              >
-                <path d="M16.5 8.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v8.25A2.25 2.25 0 0 0 6 16.5h8.25" />
-                <path d="M16.5 12c1.5 0 3-1.5 3-3v-3l-3 3z" />
-                <path d="M16.5 12c-1.5 0-3-1.5-3-3V6l3 3z" />
-                <path d="M10.5 16.5c0 1.242 1.008 2.25 2.25 2.25s2.25-1.008 2.25-2.25-1.008-2.25-2.25-2.25-2.25 1.008-2.25 2.25z" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-gray-600 hover:text-blue-600 transition">
+                <path d="M12 2v14m0 0a5 5 0 1 0 5 5m-5-5a5 5 0 1 1-5-5m5 5V2m0 0a8 8 0 0 0 8-8H6a8 8 0 0 0 8 8" />
               </svg>
             </a>
             <Button variant="outline" asChild>
@@ -110,22 +96,8 @@ export const NavMenu = () => {
                 <Youtube className="w-5 h-5 text-gray-600" />
               </a>
               <a href="https://www.tiktok.com/@infinityfencingnw" target="_blank" rel="noopener noreferrer">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  className="w-5 h-5 text-gray-600"
-                >
-                  <path d="M16.5 8.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v8.25A2.25 2.25 0 0 0 6 16.5h8.25" />
-                  <path d="M16.5 12c1.5 0 3-1.5 3-3v-3l-3 3z" />
-                  <path d="M16.5 12c-1.5 0-3-1.5-3-3V6l3 3z" />
-                  <path d="M10.5 16.5c0 1.242 1.008 2.25 2.25 2.25s2.25-1.008 2.25-2.25-1.008-2.25-2.25-2.25-2.25 1.008-2.25 2.25z" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-gray-600">
+                  <path d="M12 2v14m0 0a5 5 0 1 0 5 5m-5-5a5 5 0 1 1-5-5m5 5V2m0 0a8 8 0 0 0 8-8H6a8 8 0 0 0 8 8" />
                 </svg>
               </a>
             </div>
