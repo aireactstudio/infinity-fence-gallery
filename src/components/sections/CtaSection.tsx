@@ -36,7 +36,7 @@ export const CtaSection = () => {
     fontSize: '1.125rem',
     lineHeight: '1.75rem',
     border: '1px solid #ffffff',
-    background: '#ffffff',
+    background: 'red',
     color: '#ffffff',
     textDecoration: 'none',
     borderRadius: '0.375rem',
