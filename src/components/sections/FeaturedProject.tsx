@@ -62,7 +62,7 @@ export const FeaturedProject = () => {
           >
             <div className="aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
               <img 
-                src="https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/8fc95289-cbc4-4c87-a1aa-93d88220f2ff/LI9A3480.JPG" 
+                src="https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/e5bff511-6bb0-4a4f-847a-6ad9d37473fc/Screenshot+2025-02-06+at+8.10.27%E2%80%AFPM.png" 
                 alt="Custom cedar privacy fence project"
                 className="w-full h-full object-cover"
               />

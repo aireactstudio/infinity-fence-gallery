@@ -4,31 +4,31 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 export const PortfolioPreview = () => {
-  // Simulating portfolio items with the same image since we don't have multiple images
+  // Updated projects array with real images
   const projects = [
     {
       id: 1,
       title: "Cedar Privacy Fence",
       category: "Wood Fencing",
-      image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/8fc95289-cbc4-4c87-a1aa-93d88220f2ff/LI9A3480.JPG"
+      image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/9dad1385-298f-4e19-b95a-e96778427887/Screenshot+2025-02-06+at+8.11.13%E2%80%AFPM.png"
     },
     {
       id: 2,
       title: "Commercial Security Fence",
       category: "Commercial Fencing",
-      image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/8fc95289-cbc4-4c87-a1aa-93d88220f2ff/LI9A3480.JPG"
+      image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/acf85770-222c-4233-9419-52ddab0226a6/Screenshot+2025-02-06+at+8.11.08%E2%80%AFPM.png"
     },
     {
       id: 3,
       title: "Custom Driveway Gate",
       category: "Custom Gates",
-      image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/8fc95289-cbc4-4c87-a1aa-93d88220f2ff/LI9A3480.JPG"
+      image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/bd33b3cf-932e-43b9-a0ed-0750a7148b49/Screenshot+2025-02-06+at+8.09.21%E2%80%AFPM.png"
     },
     {
       id: 4,
       title: "Chain-link Security Fence",
       category: "Chainlink Fencing",
-      image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/8fc95289-cbc4-4c87-a1aa-93d88220f2ff/LI9A3480.JPG"
+      image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/ea445e4e-4f76-4b30-84ea-d0799fbe6523/Screenshot+2025-02-06+at+8.09.51%E2%80%AFPM.png"
     }
   ];
 
