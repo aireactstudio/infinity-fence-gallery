@@ -56,7 +56,7 @@ export const HeroSection = () => {
     fontSize: '1.125rem',
     lineHeight: '1.75rem',
     border: '1px solid #ffffff',
-    background: 'transparent',
+    background: 'white',
     color: 'blue', // Blue text as requested
     textDecoration: 'none',
     borderRadius: '0.375rem', // Approximate Tailwind's default button border-radius
