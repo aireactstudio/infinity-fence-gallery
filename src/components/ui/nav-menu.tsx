@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Instagram, Youtube } from "lucide-react";
@@ -8,7 +7,6 @@ export const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  // Helper function to check if a path is active
   const isActive = (path: string) => location.pathname === path;
 
   return (
@@ -23,7 +21,6 @@ export const NavMenu = () => {
             />
           </NavLink>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <NavLink to="/" className={({ isActive }) => 
               isActive ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600 transition"
@@ -50,8 +47,22 @@ export const NavMenu = () => {
               <Youtube className="w-5 h-5 text-gray-600 hover:text-blue-600 transition" />
             </a>
             <a href="https://www.tiktok.com/@infinityfencingnw" target="_blank" rel="noopener noreferrer">
-              <svg className="w-5 h-5 text-gray-600 hover:text-blue-600 transition" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19.321 5.562a5.122 5.122 0 0 1 .244 5.085A5.269 5.269 0 0 1 17 13.164V6.562h2.321zM17 5.562V2h-2v11.164a3.002 3.002 0 0 1-4.583 2.532 3.002 3.002 0 0 1-1.417-4l-1.732-1a5.002 5.002 0 0 0 9.732.968V5.562z"/>
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                className="w-5 h-5 text-gray-600 hover:text-blue-600 transition"
+              >
+                <path d="M16.5 8.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v8.25A2.25 2.25 0 0 0 6 16.5h8.25" />
+                <path d="M16.5 12c1.5 0 3-1.5 3-3v-3l-3 3z" />
+                <path d="M16.5 12c-1.5 0-3-1.5-3-3V6l3 3z" />
+                <path d="M10.5 16.5c0 1.242 1.008 2.25 2.25 2.25s2.25-1.008 2.25-2.25-1.008-2.25-2.25-2.25-2.25 1.008-2.25 2.25z" />
               </svg>
             </a>
             <Button variant="outline" asChild>
@@ -62,7 +73,6 @@ export const NavMenu = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button 
             className="md:hidden p-2"
             onClick={() => setIsOpen(!isOpen)}
@@ -75,7 +85,6 @@ export const NavMenu = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} pb-4`}>
           <div className="flex flex-col space-y-4">
             <NavLink to="/" className={({ isActive }) => 
@@ -101,8 +110,22 @@ export const NavMenu = () => {
                 <Youtube className="w-5 h-5 text-gray-600" />
               </a>
               <a href="https://www.tiktok.com/@infinityfencingnw" target="_blank" rel="noopener noreferrer">
-                <svg className="w-5 h-5 text-gray-600" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19.321 5.562a5.122 5.122 0 0 1 .244 5.085A5.269 5.269 0 0 1 17 13.164V6.562h2.321zM17 5.562V2h-2v11.164a3.002 3.002 0 0 1-4.583 2.532 3.002 3.002 0 0 1-1.417-4l-1.732-1a5.002 5.002 0 0 0 9.732.968V5.562z"/>
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  className="w-5 h-5 text-gray-600"
+                >
+                  <path d="M16.5 8.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v8.25A2.25 2.25 0 0 0 6 16.5h8.25" />
+                  <path d="M16.5 12c1.5 0 3-1.5 3-3v-3l-3 3z" />
+                  <path d="M16.5 12c-1.5 0-3-1.5-3-3V6l3 3z" />
+                  <path d="M10.5 16.5c0 1.242 1.008 2.25 2.25 2.25s2.25-1.008 2.25-2.25-1.008-2.25-2.25-2.25-2.25 1.008-2.25 2.25z" />
                 </svg>
               </a>
             </div>
