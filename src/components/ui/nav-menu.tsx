@@ -1,11 +1,15 @@
 
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Instagram, Youtube } from "lucide-react";
 import { Button } from "./button";
 
 export const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  // Helper function to check if a path is active
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
@@ -21,13 +25,19 @@ export const NavMenu = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <NavLink to="/" className="text-gray-700 hover:text-blue-600 transition">
+            <NavLink to="/" className={({ isActive }) => 
+              isActive ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600 transition"
+            }>
               Home
             </NavLink>
-            <NavLink to="/portfolio" className="text-gray-700 hover:text-blue-600 transition">
+            <NavLink to="/portfolio" className={({ isActive }) => 
+              isActive ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600 transition"
+            }>
               Portfolio
             </NavLink>
-            <NavLink to="/contact" className="text-gray-700 hover:text-blue-600 transition">
+            <NavLink to="/contact" className={({ isActive }) => 
+              isActive ? "text-blue-600 font-medium" : "text-gray-700 hover:text-blue-600 transition"
+            }>
               Contact
             </NavLink>
           </div>
@@ -68,13 +78,19 @@ export const NavMenu = () => {
         {/* Mobile Menu */}
         <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} pb-4`}>
           <div className="flex flex-col space-y-4">
-            <NavLink to="/" className="text-gray-700 hover:text-blue-600 transition px-4 py-2">
+            <NavLink to="/" className={({ isActive }) => 
+              isActive ? "text-blue-600 font-medium px-4 py-2" : "text-gray-700 hover:text-blue-600 transition px-4 py-2"
+            }>
               Home
             </NavLink>
-            <NavLink to="/portfolio" className="text-gray-700 hover:text-blue-600 transition px-4 py-2">
+            <NavLink to="/portfolio" className={({ isActive }) => 
+              isActive ? "text-blue-600 font-medium px-4 py-2" : "text-gray-700 hover:text-blue-600 transition px-4 py-2"
+            }>
               Portfolio
             </NavLink>
-            <NavLink to="/contact" className="text-gray-700 hover:text-blue-600 transition px-4 py-2">
+            <NavLink to="/contact" className={({ isActive }) => 
+              isActive ? "text-blue-600 font-medium px-4 py-2" : "text-gray-700 hover:text-blue-600 transition px-4 py-2"
+            }>
               Contact
             </NavLink>
             <div className="flex items-center space-x-6 px-4 py-2">
