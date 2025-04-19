@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
@@ -27,7 +26,7 @@ export const CtaSection = () => {
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
               <a href="/contact">Get a Free Quote</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
               <a href="tel:3602001005" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
                 <span>360.200.1005</span>

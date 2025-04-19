@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NavMenu } from "@/components/ui/nav-menu";
@@ -7,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Image, Medal, CheckCircle, Star } from "lucide-react";
 
-// Portfolio categories with more specific fencing types
 const categories = [
   "All",
   "Wood Privacy",
@@ -19,13 +17,12 @@ const categories = [
   "Ranch & Farm"
 ];
 
-// Extended portfolio items with more details
 const portfolioItems = [
   {
     id: 1,
     title: "Modern Cedar Privacy Fence",
     category: "Wood Privacy",
-    image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/8fc95289-cbc4-4c87-a1aa-93d88220f2ff/LI9A3480.JPG",
+    image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/9dad1385-298f-4e19-b95a-e96778427887/Screenshot+2025-02-06+at+8.11.13%E2%80%AFPM.png",
     description: "Custom 6' cedar privacy fence with decorative top lattice",
     details: {
       location: "Vancouver, WA",
@@ -38,7 +35,7 @@ const portfolioItems = [
     id: 2,
     title: "Ranch Style Split Rail",
     category: "Ranch & Farm",
-    image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/8fc95289-cbc4-4c87-a1aa-93d88220f2ff/LI9A3480.JPG",
+    image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/acf85770-222c-4233-9419-52ddab0226a6/Screenshot+2025-02-06+at+8.11.08%E2%80%AFPM.png",
     description: "Traditional three-rail split rail fence for large property",
     details: {
       location: "Battle Ground, WA",
@@ -51,13 +48,39 @@ const portfolioItems = [
     id: 3,
     title: "Commercial Security Gate",
     category: "Commercial",
-    image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/8fc95289-cbc4-4c87-a1aa-93d88220f2ff/LI9A3480.JPG",
+    image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/bd33b3cf-932e-43b9-a0ed-0750a7148b49/Screenshot+2025-02-06+at+8.09.21%E2%80%AFPM.png",
     description: "Automated sliding gate for industrial complex",
     details: {
       location: "Portland, OR",
       duration: "4 days",
       length: "30 feet wide",
       features: ["Access Control System", "Safety Sensors", "High-Security Locks"]
+    }
+  },
+  {
+    id: 4,
+    title: "Ornamental Iron Estate Gate",
+    category: "Ornamental Iron",
+    image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/e5bff511-6bb0-4a4f-847a-6ad9d37473fc/Screenshot+2025-02-06+at+8.10.27%E2%80%AFPM.png",
+    description: "Custom designed ornamental iron gate with automated opening system",
+    details: {
+      location: "Lake Oswego, OR",
+      duration: "6 days",
+      length: "16 feet wide",
+      features: ["Custom Ironwork", "Remote Access", "Intercom System"]
+    }
+  },
+  {
+    id: 5,
+    title: "Chain Link Security Fence",
+    category: "Chain Link",
+    image: "https://images.squarespace-cdn.com/content/v1/66c2c28f479f4e282893a91b/ea445e4e-4f76-4b30-84ea-d0799fbe6523/Screenshot+2025-02-06+at+8.09.51%E2%80%AFPM.png",
+    description: "Commercial grade chain link fence with privacy slats",
+    details: {
+      location: "Vancouver, WA",
+      duration: "4 days",
+      length: "300 linear feet",
+      features: ["9-gauge wire", "Privacy Slats", "3-strand Barbed Wire"]
     }
   }
 ];
@@ -74,7 +97,6 @@ const Portfolio = () => {
     <div className="min-h-screen bg-white">
       <NavMenu />
 
-      {/* Hero Section with Parallax Effect */}
       <section className="relative h-[60vh] overflow-hidden">
         <motion.div
           className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800"
@@ -106,7 +128,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -160,7 +181,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Category Filter */}
       <section className="py-8 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4">
@@ -178,7 +198,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Portfolio Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <AnimatePresence mode="wait">
@@ -197,7 +216,7 @@ const Portfolio = () => {
                   whileHover={{ y: -5 }}
                   onClick={() => setSelectedItem(item)}
                 >
-                  <div className="aspect-w-4 aspect-h-3">
+                  <div className="aspect-w-16 aspect-h-9">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -225,7 +244,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Start Your Project?</h2>

@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
@@ -49,8 +48,8 @@ export const HeroSection = () => {
             <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
               <a href="/contact">Get a Free Quote</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
-              <a className="text-blue" href="/portfolio">View Our Work</a>
+            <Button asChild size="lg" variant="outline" className="border-white hover:bg-white hover:text-blue-600">
+              <a href="/portfolio">View Our Work</a>
             </Button>
           </motion.div>
         </div>
