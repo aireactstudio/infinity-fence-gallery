@@ -1,6 +1,5 @@
-
 import { motion } from "framer-motion";
-import { CheckCircle, Award, ThumbsUp, Tool } from "lucide-react";
+import { CheckCircle, Award, ThumbsUp, Hammer } from "lucide-react";
 
 export const WhyChooseUs = () => {
   const benefits = [
@@ -20,7 +19,7 @@ export const WhyChooseUs = () => {
       description: "We're committed to exceeding your expectations with responsive service and exceptional results."
     },
     {
-      icon: <Tool className="h-12 w-12 text-blue-600" />,
+      icon: <Hammer className="h-12 w-12 text-blue-600" />,
       title: "Premium Materials",
       description: "We use only top-quality materials that ensure durability, longevity, and aesthetic appeal."
     }
