@@ -1,7 +1,6 @@
-
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Instagram, Youtube, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Instagram, Youtube, MapPin, Phone, Mail, Clock, CheckCircle } from "lucide-react";
 import { NavMenu } from "@/components/ui/nav-menu";
 import { Footer } from "@/components/ui/footer";
 import { Button } from "@/components/ui/button";
