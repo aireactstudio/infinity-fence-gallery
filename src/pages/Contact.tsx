@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Instagram, Youtube } from "lucide-react"; // Add this import for the icons
 import { NavMenu } from "@/components/ui/nav-menu";
 import { Footer } from "@/components/ui/footer";
 import { Button } from "@/components/ui/button";
